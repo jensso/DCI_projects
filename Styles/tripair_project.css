@@ -1,0 +1,191 @@
+
+
+header {
+  margin-bottom: 0.1vw
+  padding: 2vw;
+  display: flex;
+  background-image: url(../Images/clouds.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header > li {
+  color: white;
+  list-style-type: none;
+  font-size: 2.5vw;
+  padding: 1vw;
+}
+
+li#logo > img {
+  height: 6vw;
+  background: white;
+  border-radius: 20%;
+}
+
+li#logo {
+  flex-grow: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../Images/traumstrand.jpg);
+  background-repeat: no-repeat;
+  padding: 8vw;
+  background-size: cover;
+}
+
+form {
+  width: 60vw;
+  margin: 0 auto;
+  background: rgba(55, 49, 33, 0.6);
+  justify-content: space-evenly;
+  display: flex;
+}
+
+main > form > li {
+  display: inline;
+  font-size: 2vw;
+  margin: 0 auto;
+  color: white;
+}
+
+main > div#col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: rgba(55, 49, 33, 0.6);
+  width: 60vw; height: 28vw;
+  margin: 0 auto;
+}
+
+div#col > li {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 2vw;
+  width: 28vw;
+  text-align: center;
+  }
+
+div#col > input {
+  width: 28vw; height: 4vw;
+  background-color: silver;
+  color: white;
+  border: 0.1vw solid navy;
+  font-family: monospace;
+  margin: 1vw;
+  font-size: 2vw;
+}
+
+div#col > button {
+  width: 28vw; height: 4vw;
+  margin-top: 3.5vw;
+  margin-left: 1vw;
+  background: purple;
+  color: silver;
+  font-family: monospace;
+  font-size: 2vw;
+}
+
+div#col > button:hover {
+  cursor: pointer;
+  color: purple;
+  background: grey;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(55, 49, 33, 0.8);
+  color: white;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+h4 {
+  background: rgba(55, 49, 33, 0.8);
+  color: white;
+  text-align: center;
+  width: 60vw;
+  padding-bottom: 2vw;
+  margin: 4vw auto 0 auto;
+  font-family: monospace;
+  font-size: 2.5vw;
+}
+
+section > div > li {
+  color: white;
+  margin: 0.5vw auto;
+  list-style-type: none;
+  text-align: center;
+}
+
+section > div > h5 {
+  font-size: 2.2vw;
+  color: lightblue;
+  text-align: center;
+  padding: 1vw;
+}
+
+section > div > p {
+  font-size: 1vw;
+  color: deepskyblue;
+  column-count: 2;
+  text-indent: 10;
+  padding: 1vw;
+}
+
+section > div > a {
+  color: silver;
+  text-decoration: none;
+  font-size: 2.5vw;
+  font-family: monospace;
+}
+
+section > div > a:hover {
+  color: white;
+  margin-top: 1vw;
+}
+
+#newsletter {
+  display: block;
+  font-family: serif;
+  font-size: 1vw;
+  color: navy;
+  background: white;
+  opacity: 0.8;
+  border: 0.7vw solid navy;
+  box-sizing: border-box;
+  margin-top: 1vw;
+}
+
+
+#newsletter > h2 {
+  text-align: center;
+  text-shadow: -0.4vw 0.4vw lightblue;
+  font-family: utopia;
+  font-size: 2.2vw;
+}
+
+#newsletter > p {
+  text-align: center;
+  text-shadow: -0.4vw 0.4vw lightblue;
+  font-size: 1.4vw;
+  font-family: utopia;
+  padding: 2vw 6vw;
+}
+
+#newsletter > button {
+  width: 18vw; height: 4vw;
+  margin: auto;
+}
+
+#newsletter > input {
+  width: 18vw; height: 4vw;
+  margin: auto;
+}

@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav li {
+  flex-grow: 1;
+  list-style-type: none;
+  padding: 5vw;
+  background-size: 75% 75%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+nav li:nth-of-type(1) {
+  background-image: url(../Images/Badges/bayern.png);
+  display: none;
+}
+
+nav li:nth-of-type(2) {
+  background-image: url(../Images/Badges/dortmund.png);
+}
+
+nav li:nth-of-type(3) {
+  background-image: url(../Images/Badges/frankfurt.png);
+}
+
+nav li:nth-of-type(4) {
+  background-image: url(../Images/Badges/gladbach.png);
+}
+
+nav li:nth-of-type(5) {
+  background-image: url(../Images/Badges/koln.png);
+}
+
+nav li:nth-of-type(6) {
+  background-image: url(../Images/Badges/mainz.png);
+}
+
+nav li:nth-of-type(7) {
+  background-image: url(../Images/Badges/nurnberg.png);
+}
+
+nav li:nth-of-type(8) {
+  background-image: url(../Images/Badges/pauli.png);
+}

@@ -1,0 +1,38 @@
+div.contactform {
+  background-image: url(../Images/spring.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 75vw;
+  height: 30vw;
+}
+
+
+section#formgrid {
+  display: flex;
+  flex-wrap: wrap;
+  h1, article {
+    color: white;
+    text-shadow: 0.2vw 0.3vw grey;
+  }
+  input {
+    width: 30vw;
+    height: 3.5vw;
+    color: rgba (136, 222, 136, 0.8);
+    border: 0.2vw solid grey;
+    border-radius: 45vw;
+    margin: 0.2vw auto;
+    padding: 0.2vw;
+      }
+  textarea {
+    width: 30vw;
+    height: 18vw;
+    color: rgba(136, 222, 136, 0.8);
+    border-radius: 5vw;
+    border: 0.2vw solid grey;
+    margin: 0.2vw auto;
+    padding: 0.2vw;
+    font-style: italic;
+    font-size: 2vw;
+    text-align: center;
+  }
+}

@@ -1,0 +1,120 @@
+main {
+  display: flex;
+  text-align: center;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  margin: 2.5vw 0;
+  padding: 2.5vw;
+}
+
+main div img {
+  width: 100%;
+  height: 20vw;
+}
+
+main div:nth-of-type(1) h5 {
+  color: red;
+  font-size: 2vw;
+  font-family: jokerman;
+}
+
+main div:nth-of-type(1) article {
+  color: red;
+  text-align: center;
+  font-weight: lighter;
+  font-family: monospace;
+  padding: 2vw;
+  font-size: 1.5vw;
+}
+
+main div:nth-of-type(1) button {
+  width: 50%;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-family: arial;
+  border: 0.2vw solid silver;
+  border-radius: 12.5vw;
+  padding: 2.5vw;
+}
+
+main div:nth-of-type(1) button:hover {
+  text-transform: uppercase;
+  color: red;
+  background: white;
+  font-size: 1vw;
+  font-weight: bolder;
+}
+
+main div:nth-of-type(2) h5 {
+  color: green;
+  font-size: 2vw;
+  font-family: jokerman;
+}
+
+main div:nth-of-type(2) article {
+  color: green;
+  text-align: center;
+  font-weight: lighter;
+  font-family: monospace;
+  padding: 2vw;
+  font-size: 1.5vw;
+}
+
+main div:nth-of-type(2) button {
+  width: 50%;
+  text-align: center;
+  background-color: green;
+  color: white;
+  font-family: arial;
+  border: 0.2vw solid silver;
+  border-radius: 12.5vw;
+  padding: 2.5vw;
+}
+
+main div:nth-of-type(2) button:hover {
+  text-transform: uppercase;
+  color: green;
+  background: white;
+  font-size: 1vw;
+  font-weight: bolder;
+}
+
+main div:nth-of-type(3) h5 {
+  color: blue;
+  font-size: 2vw;
+  font-family: jokerman;
+}
+
+main div:nth-of-type(3) article {
+  color: blue;
+  text-align: center;
+  font-weight: lighter;
+  font-family: monospace;
+  padding: 2vw;
+  font-size: 1.5vw;
+}
+
+main div:nth-of-type(3) button {
+  width: 50%;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  font-family: arial;
+  border: 0.2vw solid silver;
+  border-radius: 12.5vw;
+  padding: 2.5vw;
+}
+
+main div:nth-of-type(3) button:hover {
+  text-transform: uppercase;
+  color: blue;
+  background: white;
+  font-size: 1vw;
+  font-weight: bolder;
+}

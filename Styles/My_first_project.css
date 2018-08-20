@@ -1,0 +1,58 @@
+body{ background-image: url("elphi.jpg"); background-repeat: repeat-x; background-position: center; 
+
+}
+
+section { text-align: center;
+	background: silver; border: 3px black; margin: 10vw 0; display: flex;
+	justify-content: space-around; height: 400px; position: center;
+}
+article{ text-align: right;
+	background: black; color: white; display: inline-block; font-variant: small-caps;
+}
+article:hover{ text-align: center;
+	background: white; color: grey; transform: scale(0.8,1.5); text-align: center;
+}
+article#lorem{background: red; color:grey; text-align: left;
+}
+article#lorem:hover{text-align: center; color: white; background: grey;
+}
+section div {
+	text-align: center; padding: 8px 4px 10px 4px; border-spacing: 1px;
+	height: 200px; border-color: silver;
+	width: 80%; transition: transform 0.7s ease-in; box-shadow: 2s linear 1s;
+	background-position: center; margin: 10px; margin: 0;}
+div:hover {
+	transform: scale(1.1,1.2);
+	box-shadow: 5px, 5px, 10px; opacity: 10%;
+}
+h1, h3{
+	font-family: jokerman; color:red; background: silver;
+}
+h1:hover, h3:hover{
+	background: red; color: silver; border-style: solid;
+}
+
+nav {background: lightblue; height: 100px; color: silver; text-align: center; 
+}
+
+nav:hover {background: lightgreen; height: 120px; background-transition: width 2s, transform: scale(1.2,2);
+}
+button:hover {background-color: red; border-style: double;
+}
+p {color: white; background: grey; font-style: bold; outline-color: black;
+}
+p:hover {background: white; color: grey; font-family: jokerman;
+}
+button {background: transparent; border-color: red; color: white; border-style: groove; position: relative; top: 40%;
+
+}
+a {text-decoration: none; text-align: center; font-size: 6px;
+}
+
+img {width: 280px; height: 80px; margin: 14px;
+}
+div#first {background-image: url("amsterdam.jpg"); background-repeat: no-repeat; }
+
+div#second{background-image: url("donostia.jpg"); background-repeat: no-repeat;}
+
+div#third{background-image: url("barcelona.jpg"); background-repeat: no-repeat;}

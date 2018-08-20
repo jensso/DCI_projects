@@ -1,0 +1,16 @@
+body {
+  background: lightgreen;
+}
+
+section {
+  display: inline-flex; flex-direction: row; border: 1px solid green;
+}
+
+div {
+  width: 20vw; height: 10vw; background: #bbb888; border: 0.5px solid black;
+  display: flex; flex-direction: column-reverse;
+}
+
+p {
+  background: rgba(0, 0, 0, 0.6); color: white; font-family: monospace; font-size: 1vw;
+}
