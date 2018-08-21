@@ -3,9 +3,12 @@
 }
 
 section {
-  display: grid; width:80%; margin: 5vw auto; grid-gap: 1vw;
-  grid-template-columns: repeat(6, 12vw);
-  grid-template-rows: repeat(9, 10vw);
+  display: grid;
+  width:80%;
+  margin: 5vw auto;
+  grid-template: repeat(9, 10vw) / repeat(6, 12vw);
+  grid-gap: 0.5vw 1vw;
+
 }
 .blau {
   grid-column: 1 / span 1;
