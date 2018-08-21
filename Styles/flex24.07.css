@@ -1,0 +1,29 @@
+:root {
+  counter-reset: nummer;
+  --favcolor: #102030;
+  --favcolor2: #302010;
+}
+
+body {
+  background: var(--favcolor); font-family: monospace;
+}
+
+section.col_1 {
+  width: 35vw; height: 30vw; background: var(--favcolor2); display: flex;
+  flex-wrap: wrap; padding: 1vw; margin: 1vw auto; flex-direction: column;
+}
+section.col_1 div {
+  width: 15%; height: 8vw; border: 0.5vw solid grey; padding: 1vw; margin: 1vw auto;
+}
+
+div {
+  font-family: sans-serif; color: white; text-shadow: 0.2vw 0.3vw navy; justify-content: center;
+}
+
+ul {
+  text-decoration: none; text-align: center; color: silver; text-shadow: 0.2vw 0.2vw grey;
+}
+
+ul:before {
+  content: counter(nummer); counter-increment: nummer;
+}

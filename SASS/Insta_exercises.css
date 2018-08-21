@@ -1,0 +1,240 @@
+@charset "UTF-8";
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0.2vw solid red;
+  width: 20vw;
+  height: 20vw;
+  margin: 1.5vw auto;
+  padding: 1.5vw 2.5vw;
+}
+
+div:nth-of-type(1) {
+  background-size: 100% 50%;
+  background-margin: 4vw 2.5vw;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(../Images/amsterdam.jpg);
+}
+
+div:nth-of-type(1) p:before {
+  height: 20vw;
+  color: silver;
+  text-shadow: 0.2vw 0.3vw black;
+  font-size: 2vw;
+  content: "Hauptstadt von den Niederlanden";
+}
+
+div:nth-of-type(1) h4:before {
+  color: silver;
+  opacity: 0.7;
+  text-shadow: 0.2vw 0.2vw red;
+  font-family: arial;
+  font-size: 2.5vw;
+  content: "Amsterdam";
+}
+
+div:nth-of-type(1) button {
+  color: red;
+  background: white;
+  border-radius: 25vw;
+  text-align: center;
+}
+
+div:nth-of-type(2) {
+  background-size: 100% 50%;
+  background-margin: 4vw 2.5vw;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(../Images/barcelona.jpg);
+}
+
+div:nth-of-type(2) p:before {
+  height: 20vw;
+  color: silver;
+  text-shadow: 0.2vw 0.3vw black;
+  font-size: 2vw;
+  content: "spanische Stadt in Katalonien";
+}
+
+div:nth-of-type(2) h4:before {
+  color: silver;
+  opacity: 0.7;
+  text-shadow: 0.2vw 0.2vw red;
+  font-family: arial;
+  font-size: 2.5vw;
+  content: "Barcelona";
+}
+
+div:nth-of-type(2) button {
+  color: red;
+  background: white;
+  border-radius: 25vw;
+  text-align: center;
+}
+
+div:nth-of-type(3) {
+  background-size: 100% 50%;
+  background-margin: 4vw 2.5vw;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(../Images/brooklyn.jpg);
+}
+
+div:nth-of-type(3) p:before {
+  height: 20vw;
+  color: silver;
+  text-shadow: 0.2vw 0.3vw black;
+  font-size: 2vw;
+  content: "berühmter Stadtteil in NYC";
+}
+
+div:nth-of-type(3) h4:before {
+  color: silver;
+  opacity: 0.7;
+  text-shadow: 0.2vw 0.2vw red;
+  font-family: arial;
+  font-size: 2.5vw;
+  content: "New York City";
+}
+
+div:nth-of-type(3) button {
+  color: red;
+  background: white;
+  border-radius: 25vw;
+  text-align: center;
+}
+
+div:nth-of-type(4) {
+  background-size: 100% 50%;
+  background-margin: 4vw 2.5vw;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(../Images/canyon.jpg);
+}
+
+div:nth-of-type(4) p:before {
+  height: 20vw;
+  color: silver;
+  text-shadow: 0.2vw 0.3vw black;
+  font-size: 2vw;
+  content: "sehr heisser Ort in den USA";
+}
+
+div:nth-of-type(4) h4:before {
+  color: silver;
+  opacity: 0.7;
+  text-shadow: 0.2vw 0.2vw red;
+  font-family: arial;
+  font-size: 2.5vw;
+  content: "Death Valley";
+}
+
+div:nth-of-type(4) button {
+  color: red;
+  background: white;
+  border-radius: 25vw;
+  text-align: center;
+}
+
+div:nth-of-type(5) {
+  background-size: 100% 50%;
+  background-margin: 4vw 2.5vw;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(../Images/cologne.jpg);
+}
+
+div:nth-of-type(5) p:before {
+  height: 20vw;
+  color: silver;
+  text-shadow: 0.2vw 0.3vw black;
+  font-size: 2vw;
+  content: "deutsche Hauptstadt des Karnevals";
+}
+
+div:nth-of-type(5) h4:before {
+  color: silver;
+  opacity: 0.7;
+  text-shadow: 0.2vw 0.2vw red;
+  font-family: arial;
+  font-size: 2.5vw;
+  content: "Köln";
+}
+
+div:nth-of-type(5) button {
+  color: red;
+  background: white;
+  border-radius: 25vw;
+  text-align: center;
+}
+
+div:nth-of-type(6) {
+  background-size: 100% 50%;
+  background-margin: 4vw 2.5vw;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(../Images/donostia.jpg);
+}
+
+div:nth-of-type(6) p:before {
+  height: 20vw;
+  color: silver;
+  text-shadow: 0.2vw 0.3vw black;
+  font-size: 2vw;
+  content: "spanische Stadt an der Nordatlantikküste";
+}
+
+div:nth-of-type(6) h4:before {
+  color: silver;
+  opacity: 0.7;
+  text-shadow: 0.2vw 0.2vw red;
+  font-family: arial;
+  font-size: 2.5vw;
+  content: "San Sebastian";
+}
+
+div:nth-of-type(6) button {
+  color: red;
+  background: white;
+  border-radius: 25vw;
+  text-align: center;
+}
+
+div:nth-of-type(7) {
+  background-size: 100% 50%;
+  background-margin: 4vw 2.5vw;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(../Images/elphi.jpg);
+}
+
+div:nth-of-type(7) p:before {
+  height: 20vw;
+  color: silver;
+  text-shadow: 0.2vw 0.3vw black;
+  font-size: 2vw;
+  content: "Hamburgs neues Wahrzeichen";
+}
+
+div:nth-of-type(7) h4:before {
+  color: silver;
+  opacity: 0.7;
+  text-shadow: 0.2vw 0.2vw red;
+  font-family: arial;
+  font-size: 2.5vw;
+  content: "Hamburg";
+}
+
+div:nth-of-type(7) button {
+  color: red;
+  background: white;
+  border-radius: 25vw;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+body {background: silver; text-align: center; font-size: 3vw; font: Arial;}
+
+header{color: white; background: black; font-size: 4vw; padding-top: 2vw;padding-right: 1vw; padding-bottom: 1vw; padding-left: 1vw;}
+
+nav{background: lightblue; text-align: center; font-size: 4vw; font: Verdana;}
+
+li {display: inline-block; font-size: 2vw; text-align: center; padding: 1vw; font-weight:
+ bold; color: solid black;}
+
+section{background: grey; font-weight: bolder; font-family: arial; border-style: solid; width:80vw; margin: 1vw auto;}
+
+img {width: 70vw; height: auto; border-style: double;}
+
+a {color: black; font-weight: bolder; text-decoration-line: none;}
+
+nav a:hover {background: white; color: red;}
+
+nav a:active {color: white; background: black;}
+

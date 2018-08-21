@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+  nav {
+  display: flex;
+
+
+     li {
+       flex-grow: 1;
+       list-style-type: none;
+       padding: 5vw;
+       background: {
+         size: 75% 75%;
+         position: center center;
+         repeat: no-repeat;
+       }
+       @each $pos, $team in (1,bayern), (2,dortmund),(3,frankfurt),
+       (4,gladbach),(5,koln),(6,mainz),(7,nurnberg),(8,pauli) {
+         &:nth-of-type(#{$pos}) {
+           background-image:url(../Images/Badges/#{$team}.png);
+           @if $team == bayern  {
+             display: none;
+             }
+           }
+         }
+       }
+     }
