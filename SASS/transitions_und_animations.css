@@ -1,0 +1,10 @@
+body {
+  background: lightgreen;
+}
+
+body div {
+  width: 15vw;
+  height: 15vw;
+  background-color: navy;
+  transform: rotate(45deg);
+}
