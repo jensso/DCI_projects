@@ -12,7 +12,7 @@
     opacity: 0.7;
   }
   100% {
-    transform: translateX(0vw);
+    transform: translateX(5vw);
     opacity: 0.9;
   }
 }
