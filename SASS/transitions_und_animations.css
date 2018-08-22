@@ -1,10 +1,67 @@
-body {
-  background: lightgreen;
+@keyframes makeCircle {
+  0% {
+    transform: translateX(5vw);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translateX(15vw);
+    opacity: 0.3;
+  }
+  60% {
+    transform: translateX(45vw);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(105vw);
+    opacity: 0.9;
+  }
 }
 
-body div {
+body {
+  background: lightgreen;
+  text-align: center;
+}
+
+body div.transformed {
   width: 15vw;
   height: 15vw;
   background-color: navy;
-  transform: rotate(45deg);
+  border: 0.5vw solid lightblue;
+  transform: rotate(45deg) translate(15vw, 10vw) scale(0.5) skew(30deg);
+}
+
+body div.animated {
+  width: 20vw;
+  height: 20vw;
+  background-color: orange;
+  transform: rotate(45deg) translate(15vw, 10vw) scale(0.5) skew(30deg);
+}
+
+body button {
+  border-color: white;
+  border-radius: 25vw;
+  color: grey;
+  margin: 2vw;
+}
+
+body button:focus {
+  background: red;
+  color: white;
+}
+
+body button:focus ~ div.animated {
+  width: 30vw;
+  height: 20vw;
+  background: yellow;
+  border-radius: 20vw;
+  border: 0.5vw solid silver;
+  animation: makeCircle 5s linear forwards;
+}
+
+body button:focus ~ div:first-of-type {
+  transform: rotate(60deg) scale(1.5);
+  translate: 50vw, 10vw;
+  background: red;
+  border: 0.5vw solid white;
+  opacity: 0.6;
 }
