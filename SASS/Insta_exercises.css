@@ -8,7 +8,7 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 0.2vw solid red;
+  border: 0.2vw solid navy;
   width: 20vw;
   height: 20vw;
   margin: 1.5vw auto;
