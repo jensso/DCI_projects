@@ -47,7 +47,8 @@ var randomNumber = 44;
 var even =  randomNumber  %2;
 
 console.log(even);
-
+/*(!) HOISTING : scans code before! executing regarding existence of Variables & Functions,
+this is the reason not executed code in statements is labelt as 'undefinded'*/
 var myMoney = 100;
 var hotelRate = 200;
 // assuming a suite cost double as a regular room
