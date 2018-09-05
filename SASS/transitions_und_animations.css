@@ -8,7 +8,7 @@
     opacity: 0.5;
   }
   60% {
-    transform: translateX(105vw);
+    transform: translateX(75vw);
     opacity: 0.7;
   }
   100% {
@@ -55,12 +55,12 @@ body button:focus ~ div.animated {
   background: yellow;
   border-radius: 20vw;
   border: 0.5vw solid silver;
-  animation: makeCircle 5s linear forwards;
+  animation: makeCircle 3s linear forwards;
 }
 
 body button:focus ~ div:first-of-type {
-  transform: rotate(60deg) scale(1.5);
-  translate: 50vw, 10vw;
+  transform: rotate(135deg) scale(1.5);
+  translate: 40vw, 20vw;
   background: red;
   border: 0.5vw solid white;
   opacity: 0.6;
