@@ -13,6 +13,5 @@ if (randomNumber < 0) {
         console.log(`${randomNumber} is Zero!`);
       }
 
-/* 2. Write a program that reads a number and return it's opposite.
+/* 2. Write a program that reads a number and returns it's opposite.
  If 5 returns -5. If -5 returns 5. Do it without using the native Math object.*/
- 
