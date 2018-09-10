@@ -1,11 +1,11 @@
-// a program that accepts a number, and prints to the console if its negative, positive or 0.
+ // a program that accepts a number, and prints to the console if its negative, positive or 0.
 var randomNumber = 0;
 
-if (randomNumber < 0) {
-  console.log(`${randomNumber} is negative!`);
+if (randomNumber > 0) {
+  console.log(`${randomNumber} is positive!`);
   }
-  else if (randomNumber > 0) {
-    console.log(`${randomNumber} is positive!`);
+  else if (randomNumber <  0) {
+    console.log(`${randomNumber} is negative!`);
     }
       else {
         console.log(`${randomNumber} is Zero!`);
@@ -15,12 +15,15 @@ if (randomNumber < 0) {
 e.g. If 5 returns -5. If -5 returns 5. */
 var oppositeNumber = -96;
 
-if (oppositeNumber != 0) {
+if (oppositeNumber !== 0) {
   console.log(oppositeNumber* -1);
   }
     else {
     console.log(`zero is neutral, dumbass!`);
     }
+/*  or as ternary:
+oppositeNumber !== 0 ? console.log(oppositeNumber* -1) : console.log(`zero is neutral, dumbass!`); */
+
  // a program that accepts 5 inputs as numbers & calculates the sum and the average of them.
 var sum = true;
  var inputI = 110;
@@ -84,7 +87,7 @@ switch (daysToSurvive) {
 
 /*Type a year and check if this year is a leap year (366 days),
 given that leap years  are 2016, 2012, 2008, 2004, 2000 etc.*/
-var yearInput = 2008;
+var yearInput = 2010;
 
 if (yearInput/4 % !0) {
   console.log(`${yearInput} is not a leap year. Go directly to march 1st!`);
