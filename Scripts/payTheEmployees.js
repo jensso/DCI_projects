@@ -29,7 +29,7 @@ their payment yet, in order to raise your middle finger to these suckers.
 Additionally print how much money your balance has after the payment.
 */
 
-var cashier = 100000;
+
 var staffId = 1;
 var engineerGuy = 10000;
 var dataAnalystGuy = 7500;
@@ -39,33 +39,42 @@ var frontendGuys = 1500;
 var normalGuys = 1000;
 var devOpsEngineers = 5000;
 var projectManager = 4000;
+var nextPayment = 10000;
 
-while (cashier > 0) {
+for (var cashier = 100000; cashier - nextPayment >0 ;staffId++) {
   if (staffId == 1) {
     cashier = cashier-engineerGuy;
+    nextPayment = dataAnalystGuy;
+
     }
   else if (staffId == 2) {
     cashier = cashier-dataAnalystGuy;
+
     }
-  else if (staffId >2 && staffId <5) {
+  else if (staffId <= 4) {
     cashier = cashier-fullStackGuys;
+    staffId === 4 ? nextPayment = fullStackGuys : nextPayment = backendGuys;
     }
-  else if (staffId >4 && staffId <9) {
+  else if (staffId <= 8) {
     cashier = cashier-backendGuys;
+    staffId === 8 ? nextPayment = backendGuys : nextPayment = frontendGuys;
     }
-  else if (staffId >8 && staffId <13) {
+  else if (staffId <= 12) {
     cashier = cashier-frontendGuys;
+    staffId === 12 ? nextPayment = frontendGuys : nextPayment = normalGuys;
   }
-  else if (staffId >12 && staffId <63) {
+  else if (staffId <= 62) {
     cashier = cashier-normalGuys;
+    staffId === 62 ? nextPayment = normalGuys : nextPayment = devOpsEngineers;
   }
-  else if (staffId >62 && staffId <68) {
+  else if (staffId <= 67) {
     cashier = cashier-devOpsEngineers;
+    staffId === 67 ? nextPayment = devOpsEngineers : nextPayment = projectManager;
   }
   else {
     cashier = cashier-projectManager;
   }
-  staffId++;
+
 }
 
-console.log(`${staffId} of the staff got paid, ${cashier} € are left over to spent for important stuff!`);
+console.log(`${staffId-1} of the staff got paid, ${cashier}.-€ are left over to spent for important stuff!`);
