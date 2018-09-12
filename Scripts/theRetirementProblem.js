@@ -22,8 +22,9 @@ function pension(age, retirementAge, monthlyIncome, savedMoneyPerMonthInPercent)
     }
 
 }
-
+pension(62, 67, 500, 10);
 pension(25, 67, 2500, 7);
 pension(47, 65, 1850, 5);
+pension(67, 21, 500, 10);
 pension(18, 66, 1200, 6.5);
 pension(40, 63, 4800, 3.6);
