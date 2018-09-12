@@ -1,23 +1,29 @@
-/*
-Check all numbers from 1 to 100 and print to the console only the ones that are primes.
-p.s. Primes are the numbers that are perfectly divisible ONLY by themselves and 1!
+/* Write a function that accepts some parameters and calculates the number of money
+that will have been saved until a person retires.
+
+If the person has already retired then the message 'Calculate your past memories mate!' should be printed.
+
+If not, then the program should calculate how many years remain until the person retires,
+the monthly income and take a specific percent of this income every month as saved money.
+
+Example: A lady is 40 years old, she retires at 65, she earns 2000$ per month
+and she saves the 5% of it. How much money will she have saved until she retires?
 */
 
-
-// for (var num = 1; num<=100 && num %2 ===0 && num %3 ===0 && num %5 ===0 && num %7 ===0; num++) {
-//   console.log(`I am ${num} and I am Prime!`);
-// }
-
-for (var num = 1; num <=100; num++) {
-  var isPrime = true;
-
-  for (var div =2; div <= num; div++) {
-    if (num % div === 0) {
-      isPrime = false;
-      break;
-        }
-        if (isPrime === true) {
-          console.log(`${num}`);
-        }
-      }
+function pension(age, retirementAge, monthlyIncome, savedMoneyPerMonthInPercent) {
+  var amountOfMoney =0;
+  if (age >=retirementAge) {
+    console.log(`Calculate your past memories mate!`);
+    return;
     }
+  if (age <retirementAge) {
+    amountOfMoney = (monthlyIncome*12)*(retirementAge-age)*savedMoneyPerMonthInPercent/100;
+    console.log(`You will have collected ${amountOfMoney} until your retirement!`);
+    }
+
+}
+
+pension(25, 67, 2500, 7);
+pension(47, 65, 1850, 5);
+pension(18, 66, 1200, 6.5);
+pension(40, 63, 4800, 3.6);

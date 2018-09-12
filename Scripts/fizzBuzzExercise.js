@@ -1,15 +1,16 @@
-var currentNum = 1;
-var endNum = 100;
+
+function fizzBuzz(currentNum, endNum, x, y) {
+
 
 while (currentNum <= endNum) {
 
-if (currentNum % 5 === 0 && currentNum % 3 === 0) {
+if (currentNum % x === 0 && currentNum % y === 0) {
   console.log(`FizzBuzz`);
 }
-else if (currentNum % 3 === 0) {
+else if (currentNum % y === 0) {
   console.log(`Fizz`);
 }
-else if (currentNum % 5 === 0) {
+else if (currentNum % x === 0) {
   console.log('Buzz');
 }
 else {
@@ -17,3 +18,8 @@ else {
   }
     currentNum++;
 }
+
+}
+
+fizzBuzz(17, 77, 2, 5);
+fizzBuzz(20, 200, 3, 8);
