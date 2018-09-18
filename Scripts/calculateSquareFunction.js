@@ -3,9 +3,6 @@
 //   console.log(`The ${x}. square of ${num} is ${squareIs}`);
 //   }
 //
-// square(5, 7);
-// square(11, 3);
-// square(100, 4);
 // square(3, 3);
 
 // function multiply(x) {
@@ -25,19 +22,31 @@
 //   }
 // }
 //
-// multiply(1);
+// multiply(5);
 
 function factorial(n) {
-
   let result =1;
 for ( let i =1; i <=n; i++) {
   result = result *i;
   }
+    return result;
+}
 
-    return console.log(result);
+let calculateCombinations = function(x,y) {
+  let totalCombinations = 0;
+  for (let i = y; i <= x; i++) {
+    totalCombinations += factorial(x) / (factorial(i) * factorial(x -i));
+    // math formula= x! / y! *(x-y)!
+  }
+  return totalCombinations;
+}
+console.log(calculateCombinations(5,3));
+
+let moneyPerBet = function(budget, x, y) {
+  return budget / calculateCombinations(x, y);
 
 }
 
-factorial(9);
-
-// math formula= x! / y! *(x-y)!
+console.log(moneyPerBet(20, 9, 7));
+console.log(moneyPerBet(50, 6, 4));
+console.log(moneyPerBet(20, 10, 2));
