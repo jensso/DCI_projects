@@ -84,38 +84,36 @@
 // console.log(marcelo);
 
 let moneyWasted = {
+  june : 888,
   july : 1005,
   august : 981,
   september : 777,
+  october : 0,
 }
 
-calcAverage = function() {
-
-  let sum = 0;
-for (let property in moneyWasted) {
-  sum += moneyWasted[property];
-}
-return sum / 3;
-}
-
-calcAverage();
-console.log(calcAverage());
 
 let skills = {
   HtmlSkills : 58,
   CssSkills : 50,
   JsSkills : 66,
+  SpanishSkills : 61,
 }
 
-calcSkills = function() {
-  let WebDevSkills =0;
+let calcSkills = function() {
+  let sum =0;
+  let count =0;
 
   for (let props in skills) {
-    WebDevSkills += skills[props];
+    sum += skills[props];
+    count++;
     }
-    return WebDevSkills / 3;
+    this.average = sum / count;
 
 }
 
 calcSkills();
 console.log(calcSkills());
+
+Object.setPrototypeOf(moneyWasted, calcSkills);
+
+moneyWasted.calcSkills();
