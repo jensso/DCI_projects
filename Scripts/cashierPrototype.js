@@ -36,6 +36,7 @@ Be careful! Some of the properties that are getting changed are shared through a
 You may want to think this first before you start implementing your architecture.
 */
 
+// shop = {}
 let shirtStock = 100;
 let jeansStock = 100;
 let jacketStock = 100;
@@ -44,16 +45,18 @@ let shirt = 10;
 let jeans = 30;
 let jacket = 150;
 
-let cashier = function(cashID,firstName,lastName,servedCustomer,cashBalance) {
+let cashier = function(cashID,firstName,lastName,) {
   this.cashID = cashID;
   this.firstName = firstName;
   this.lastName = lastName;
-  this.servedCustomer = servedCustomer;
-  this.cashBalance = cashBalance;
+  this.servedCustomer = 0;
+  this.cashBalance = 0;
 }
-let cashier1 = new cashier(1,`Britta`,`Müller`,0,0);
-let cashier2 = new cashier(2,`Helga`,`Hansen`,0,0);
-let cashier3 = new cashier(3,`Andrea`,`Andersen`,0,0);
+let cashier1 = new cashier(1,`Britta`,`Müller`);
+let cashier2 = new cashier(2,`Helga`,`Hansen`);
+let cashier3 = new cashier(3,`Andrea`,`Andersen`);
+
+// Object.setPrototypeOf(, );
 
 let sellIt = {
 cashier1 : cashier1,
