@@ -93,7 +93,18 @@ let result = testPassed(50,testResults);
 
 console.log(result);
 let emptyArray = [];
+let arrayDekade2 = [101,102,103,104,105,106,107,108,109,110]
 for (var i = 1; i < 100  ; i++) {
   emptyArray.push(i);
 }
 console.log(emptyArray);
+let = nextArray = emptyArray.concat(arrayDekade2);
+console.log(nextArray);
+
+if (nextArray.includes(111)) {
+  console.log(`111 ist auch dabei`);
+
+}
+else {
+  console.log(`bei 110 ist Schluß`);
+}
