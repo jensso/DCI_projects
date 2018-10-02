@@ -39,17 +39,15 @@ let  students =function(fullName,course,levelOfSatisfaction) {
 
   let studentsArray = [daniel,mauro,hans,peter,gaby,berta,ulla,jörg,ali,scarlett];
   for (students of studentsArray) {
+    console.log(students);
     if (this.levelOfSatisfaction >=80) {
       this.happinessCondition = 'Found the course perfect';
-
+      console.log(studentsArray.happinessCondition);
     }
     else if (this.levelOfSatisfaction >=50) {
-
       this.happinessCondition = 'Content overall';
-
     }
     else {
       this.happinessCondition = 'Customer is complaining, potential refund is going to be asked';
-
     }
   }
