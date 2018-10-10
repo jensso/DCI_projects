@@ -6,7 +6,7 @@ one of the forbidden words you have predefined. If it does print to the console 
 Predefine 5 forbidden words and put them in an array before creating the function.
 Thus it would be easier to check every word if it is included to the forbidden array of words or not.
 hint; You may want to refresh the strings split and the arrays includes method before starting.
-*/
+*/ 
 let showSentence = function(sentence) {
   let explicit = [`cock`,`ASS`,`butt`,`Dick`,`cunt`];
   explicit = explicit.join(` `).toLowerCase().split(` `);
