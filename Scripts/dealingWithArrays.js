@@ -57,19 +57,19 @@ let candidates = function(candidate1, candidate2) {
   }
 
 let emptyArray = [];
-let arrayDekade2 = [101,102,103,104,105,106,107,108,109,110]
-for (var i = 1; i < 100  ; i++) {
+let arrayDekade2 = [11,12,13,14,15,16,17,18,19,20]
+for (var i = 1; i <= 10 ; i++) {
   emptyArray.push(i);
 }
-// console.log(emptyArray);
+console.log(emptyArray);
 let = nextArray = emptyArray.concat(arrayDekade2);
-// console.log(nextArray);
+console.log(nextArray);
 
-if (nextArray.includes(111)) {
-  console.log(`111 ist auch dabei`);
+if (nextArray.includes(21)) {
+  console.log(`21 ist auch dabei`);
 }
 else {
-  console.log(`bei 110 ist Schluß`);
+  console.log(`bei 20 ist Schluß`);
 }
 // Nesting arrays
 let jake = [`Kostas`, `Diakogiannis`,30];
@@ -77,3 +77,29 @@ let jensso = [`Jens`, `Soltwedel`,47];
 let milad = [`Milad`, `Khoskaran`, 29];
 let students = [jake,jensso,milad];
 console.log(students[0][0]);
+/*
+Pick a random food to eat
+Are you hungry but you don't know what to eat for today?
+Create an array with 7 different favorite foods of yours.
+ex. favFoods = ['bananas', 'rice', 'chocolate', 'pizza', 'mett', 'bread', 'onions'];
+Create a function that picks randomly one of this seven foods and prints it to the console.
+Bonus: Create a function that actually selects randomly one of these for every day of the week
+and  prints ('On Monday i will have bananas').
+hint; You may want to create another array to hold there, the days of the week.
+Also when a food is selected it cannot be reselected, that means you need to remove it from the array.
+Maybe the splice method that any array provides will help in this case.
+arr.splice(which index to start removing, how many elements)
+*/
+let favFoods = ['bananas', 'rice', 'chocolate', 'pizza', 'mett', 'bread', 'onions'];
+let days = [`Mon`,`Tue`,`Wed`,`Thu`,`Fri`,`Sat`,`Sun`];
+
+let foodPicker = function(array) {
+  for (var i = 0; i < days.length; i++) {
+    let randomNum =  Math.floor(Math.random()*array.length);
+    let myFoodToday = array[randomNum];
+    array.splice(randomNum,1);
+    console.log(`On ${days[i]} I will eat ${myFoodToday}`);
+    console.log(array);
+  }
+}
+foodPicker(favFoods);

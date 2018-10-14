@@ -13,7 +13,7 @@ ex. 'Ask and you shall Receive, Jesus Christ'.
 let quoteDatabase = [
 
    {author: 'Jesus Christ',  quote: 'Ask and you shall receive'},
-   {author: 'Lothar Matthäus',  quote: 'Milan or Madrid, at least it s Spain!'},
+   {author: 'Lothar Matthäus',  quote: 'Milan or Madrid, at least it is Spain!'},
    {author: 'Giovanni Trappatoni',  quote: 'You play like Bottle empty'},
    {author: 'Arnold Schwarzenegger',  quote: `Hasta la vista, baby!`},
    {author: 'John F. Kennedy',  quote: 'Ich bin ein Berliner'},
@@ -45,10 +45,18 @@ The final random number should be an integer.
 */
 let randomInRange = function(a,b) {
 let randomBetween = Math.floor(Math.random() * (b-a)) + a;
-  console.log(randomBetween);
+  console.log(`randomly chose ${randomBetween} between ${a} & ${b}`);
 }
 randomInRange(10,20);
 randomInRange(1,100);
+randomInRange(1111,2222);
+
+let lotto = function(x,y) {
+  for (var i = 1; i <= 6; i++) {
+  randomInRange(x,y)
+  }
+}
+console.log(lotto(1,49));
 /*
 Find the biggest Number in an Array of Strings
 An error has occurred and you have found yourself with data of 10 students result tests that are of string data type.
@@ -67,5 +75,5 @@ let marginCalc = function(arrayOfNumbers) {
   return Math.round(Math.abs((Math.max(...arrayOfNumbers))-Math.min(...arrayOfNumbers)));
 }
 // console.log( `The margin is ` + (Math.round(Math.max(...results)) - Math.round(Math.min(...results))));
-console.log(marginCalc(results));
-console.log(marginCalc(otherResults));
+// console.log(marginCalc(results));
+// console.log(marginCalc(otherResults));
