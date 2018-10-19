@@ -91,17 +91,23 @@ let zodiacSigns = [
    Libra = [start = new Date(year,08,23), end = new Date(year,09,22),`LIBRA`],
    Scorpio = [start = new Date(year,09,23), end = new Date(year,10,21),`SCORPIO`],
    Sagittarius = [start = new Date(year,10,22), end = new Date(year,11,21),`SAGITTARIUS`],
-   Capricorn = [start = new Date(year,11,22), end = new Date(year,00,19),`CAPRICORN`],
+   Capricorn = [start = new Date(year-1,11,22), end = new Date(year,00,19),`CAPRICORN`],
+   // due to the change of the year the code needs to be adjusted
    Aquarius = [start = new Date(year,00,20), end = new Date(year,01,18),`AQUARIUS`],
    Pisces = [start = new Date(year,01,19), end = new Date(year,02,20),`PISCES`],
  ];
   for (let i = 0; i < zodiacSigns.length; i++) {
       if (zodiacSigns[i][0] <= dateOfBirth && zodiacSigns[i][1] >= dateOfBirth) {
         console.log(`Your zodiac sign is ${zodiacSigns[i][2]}`);
+        return;
     }
   }
 }
-whichZodiacAmI(`1971/6/9`);
-whichZodiacAmI(`1984/Jan/20`);
-whichZodiacAmI(`1954-03-05`);
-whichZodiacAmI(`2001/9/11`);
+let jensBirthday = new Date(1971,5,9);
+let meirsBirthday = new Date(1984,0,4);
+whichZodiacAmI(jensBirthday);
+whichZodiacAmI(`1985-Jan-25`);
+whichZodiacAmI(new Date(1954,2,5));
+whichZodiacAmI(`1977/7/7`);
+whichZodiacAmI(`25-Mar-1994`);
+whichZodiacAmI(meirsBirthday);
