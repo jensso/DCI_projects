@@ -5,16 +5,13 @@ body {
   flex-wrap: wrap;
   font-family: arial;
   font-size: 2vw;
-}
-
 
 header {
   background: navy;
   display: flex;
   flex-grow: 1;
   margin: 1vw;
-  border: 0.1vw solid rgb(100, 100, 100);
-}
+  border: 0.5vw solid rgb(100, 100, 100);
 
 a {
   margin: 2vw auto;
@@ -24,8 +21,9 @@ a {
   &:hover {
     color: red;
     text-shadow: 0.2vw 0.5vw black;
+      }
     }
-
+  }
 }
 
 button {
@@ -43,14 +41,15 @@ button {
     }
 }
 
-li {
-  width: 0vw;
+ul {
   margin: 0.2vw;
-  background: olive;
+  font-size: 1.5vw;
+
   text-shadow: 0.1vw 0.1vw grey;
   color: lightgreen;
   list-style-type: none;
   overflow: hidden;
+  display: none;
 }
 
 p  {
@@ -60,7 +59,6 @@ p  {
   text-align: center;
   transition: opacity 2s linear;
   text-shadow: 0.2vw 0.2vw silver;
-
 }
 
 div {
@@ -92,4 +90,17 @@ footer {
       height: 30vw;
     }
   }
+}
+.styleParagraph {
+  opacity: 0.8;
+  font-size: 2vw;
+  color: gold;
+  background: black;
+  text-align: left;
+  font-weight: bolder;
+  margin: 0.5vw auto;
+}
+
+.visible {
+display: block;
 }
