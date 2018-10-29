@@ -1,0 +1,208 @@
+body {
+  height: 200vw;
+  background: grey;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body header {
+  display: flex;
+  background: lightgreen;
+  border-bottom: 0.3vw solid #900;
+}
+
+body header section {
+  align-items: stretch;
+  background: silver;
+  margin: 2vw auto;
+  padding: 2vw;
+  border: 0.3vw solid white;
+  border-radius: 0.75vw;
+}
+
+body header section:hover {
+  background: #911;
+  color: #999;
+  border-radius: 2.5vw;
+  cursor: alias;
+}
+
+body div {
+  width: 25vw;
+  padding: 2vw;
+  margin: 2vw auto;
+  background: orange;
+  border: 0.4vw dotted red;
+  position: relative;
+  top: 0;
+  display: none;
+}
+
+body div span {
+  position: absolute;
+  top: 0.4vw;
+  right: 0.6vw;
+}
+
+body div span:hover {
+  color: red;
+  background: yellow;
+  border: 0.1vw solid red;
+  cursor: pointer;
+}
+
+body div.scroll {
+  display: block;
+  width: 50%;
+  height: 12vw;
+  background: white;
+  color: silver;
+  font-size: 2vw;
+  text-align: center;
+}
+
+body div.scroll strong {
+  color: white;
+  text-shadow: 0.2vw 0.2vw #000;
+}
+
+body div.scroll strong:hover {
+  cursor: nesw-resize;
+  font-size: 2.4vw;
+  color: blue;
+  text-shadow: 0.2vw 0.2vw lightblue;
+}
+
+body div.scroll b {
+  color: lightblue;
+  text-shadow: 0.8vw -0.8vw red;
+  font-family: fantasy;
+}
+
+body main {
+  margin: 1.5vw auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #468;
+  border: 0.2vw solid #080;
+}
+
+body main .carousel:first-of-type {
+  border: 0.2vw solid #543;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/colorado.jpg);
+  background-size: 67% 67%;
+}
+
+body main .carousel:nth-of-type(2) {
+  border: 0.2vw solid #555;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/forest.jpg);
+  background-size: 250% 100%;
+}
+
+body main .carousel:nth-of-type(3) {
+  border: 0.2vw solid #666;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/beachhouse.jpg);
+  background-size: 50% 35%;
+}
+
+body main .carousel:nth-of-type(4) {
+  border: 0.2vw solid #777;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/sifnos.jpg);
+  background-size: 100% 100%;
+}
+
+body main .carousel:nth-of-type(5) {
+  border: 0.2vw solid #555;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/donostia.jpg);
+  background-size: 75% 35%;
+}
+
+body main .carousel:nth-of-type(6) {
+  border: 0.2vw solid #666;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/alps.jpg);
+  background-size: 125% 150%;
+}
+
+body main .carousel:nth-of-type(7) {
+  border: 0.2vw solid #777;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/canyon.jpg);
+  background-size: 45% 30%;
+}
+
+body main .carousel:nth-of-type(8) {
+  border: 0.2vw solid #777;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/brooklyn.jpg);
+  background-size: 100% 100%;
+}
+
+body main .carousel:nth-of-type(9) {
+  border: 0.2vw solid #444;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/aero.jpg);
+  background-size: 110% 35%;
+}
+
+body main .carousel:nth-of-type(10) {
+  border: 0.2vw solid #505;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/amsterdam.jpg);
+  background-size: 150% 100%;
+}
+
+body main .carousel:nth-of-type(11) {
+  border: 0.2vw solid #666;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/lights.jpg);
+  background-size: 120% 45%;
+}
+
+body main .carousel:nth-of-type(12) {
+  border: 0.2vw solid #747;
+  position: relative;
+  height: 25vw;
+  flex-grow: 1;
+  background-image: url(../../Images/forest.jpg);
+  background-size: 123% 67%;
+}
+
+body main .seeThru {
+  opacity: 0.6;
+  width: 20vw;
+}
+
+body main:hover {
+  cursor: crosshair;
+  border: 0.4vw solid lightblue;
+  border-radius: 1vw;
+}

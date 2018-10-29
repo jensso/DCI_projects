@@ -38,13 +38,11 @@ let description = document.querySelectorAll(`section.templet > p`);
 for (let j = 0; j < movie.length; j++) {
   movie[j].addEventListener(`click`, function() {
     for (let k = 0; k < description.length; k++) {
-      
       if (description[k].classList.contains(`seeText`)) {
         description[k].classList.remove(`seeText`);
         break;
-
       }
-      description[k].classList.add(`seeText`);
     }
+    description[j].classList.add(`seeText`);
   })
 }
