@@ -2,7 +2,6 @@ let button = document.querySelector(`button`);
 let button2 = document.querySelector(`button:nth-of-type(2)`);
 let unorderedList = document.querySelector(`ul`);
 let paragraph = document.querySelector(`p`);
-
 let listIsVisible = false;
 let paragraphIsVisible = false;
 
@@ -32,9 +31,7 @@ button2.addEventListener(`click`, function() {
 
 let notVisibleItem = true;
 let items = document.querySelectorAll(`li`);
-
 button.addEventListener(`click`, function() {
-
 if (notVisibleItem) {
 
 for (let i = 0; i < items.length; i++) {
@@ -53,8 +50,6 @@ console.log(notVisibleItem);
 
 let links = document.querySelectorAll(`header>a`);
 let list = document.querySelectorAll(`header>a>ul`);
-
-
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener(`click`, function(ev) {
 
@@ -87,13 +82,6 @@ let checkAndRemoveClass = function(classTyp, arrayTyp) {
   }
 }
 
-
-
-
-
-
-
-
 // let movies = document.querySelectorAll(`section`);
 
 // let aFewGoodMenLink = links[0];
@@ -111,21 +99,17 @@ let checkAndRemoveClass = function(classTyp, arrayTyp) {
 // for (let i = 0; i < links.length; i++) {
 //   links[i].addEventListener(`click`, function(ev) {
 //     ev.preventDefault();
-//
-//
+
 // let scrollDown = setInterval(function() {
 //   if (window.pageYOffset >= movies[i].offsetTop) {
 //     clearInterval(scrollDown);
 //   }
 //   window.scrollBy(0, 3);
-//
 // }, 1)
 // })
 // }
-
 let button3 = document.querySelector(`button:nth-of-type(3)`);
 let paragraph2 = document.querySelector(`p:nth-of-type(2)`);
-
 button3.addEventListener(`click`, function() {
   paragraph2.classList.toggle(`styleParagraph`);
 

@@ -1,5 +1,4 @@
 body {
-  height: 200vw;
   background: grey;
   box-sizing: border-box;
   margin: 0 auto;
@@ -12,6 +11,9 @@ body header {
 }
 
 body header section {
+  color: lightblue;
+  font-family: comic;
+  text-shadow: 0.2vw -0.1vw red;
   align-items: stretch;
   background: silver;
   margin: 2vw auto;
@@ -22,12 +24,12 @@ body header section {
 
 body header section:hover {
   background: #911;
-  color: #999;
+  color: green;
   border-radius: 2.5vw;
   cursor: alias;
 }
 
-body div {
+body .newsletter {
   width: 25vw;
   padding: 2vw;
   margin: 2vw auto;
@@ -38,49 +40,55 @@ body div {
   display: none;
 }
 
-body div span {
+body .newsletter span {
   position: absolute;
   top: 0.4vw;
   right: 0.6vw;
 }
 
-body div span:hover {
+body .newsletter span:hover {
   color: red;
   background: yellow;
   border: 0.1vw solid red;
   cursor: pointer;
 }
 
-body div.scroll {
+body .scroll {
   display: block;
-  width: 50%;
-  height: 12vw;
+  margin: 1vw auto;
+  padding: 1vw;
+  width: 66%;
+  height: 10vw;
   background: white;
   color: silver;
-  font-size: 2vw;
+  font-size: 1.8vw;
   text-align: center;
 }
 
-body div.scroll strong {
+body .scroll strong {
   color: white;
   text-shadow: 0.2vw 0.2vw #000;
 }
 
-body div.scroll strong:hover {
+body .scroll strong:hover {
   cursor: nesw-resize;
-  font-size: 2.4vw;
+  font-family: comic;
+  font-size: 2.5vw;
+  transition: font-size 2.5s linear;
   color: blue;
   text-shadow: 0.2vw 0.2vw lightblue;
+  text-shadow: 0.1vw 0.1vw lightgreen;
 }
 
-body div.scroll b {
+body .scroll b {
   color: lightblue;
-  text-shadow: 0.8vw -0.8vw red;
+  text-shadow: 0.5vw -0.6vw gold;
   font-family: fantasy;
 }
 
-body main {
-  margin: 1.5vw auto;
+body main.firstMain {
+  padding: 1.5vw;
+  margin: 5vw auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -88,7 +96,7 @@ body main {
   border: 0.2vw solid #080;
 }
 
-body main .carousel:first-of-type {
+body main.firstMain .carousel:first-of-type {
   border: 0.2vw solid #543;
   position: relative;
   height: 25vw;
@@ -97,8 +105,8 @@ body main .carousel:first-of-type {
   background-size: 67% 67%;
 }
 
-body main .carousel:nth-of-type(2) {
-  border: 0.2vw solid #555;
+body main.firstMain .carousel:nth-of-type(2) {
+  border: 0.2vw solid #666;
   position: relative;
   height: 25vw;
   flex-grow: 1;
@@ -106,8 +114,8 @@ body main .carousel:nth-of-type(2) {
   background-size: 250% 100%;
 }
 
-body main .carousel:nth-of-type(3) {
-  border: 0.2vw solid #666;
+body main.firstMain .carousel:nth-of-type(3) {
+  border: 0.2vw solid #765;
   position: relative;
   height: 25vw;
   flex-grow: 1;
@@ -115,8 +123,8 @@ body main .carousel:nth-of-type(3) {
   background-size: 50% 35%;
 }
 
-body main .carousel:nth-of-type(4) {
-  border: 0.2vw solid #777;
+body main.firstMain .carousel:nth-of-type(4) {
+  border: 0.2vw solid #878;
   position: relative;
   height: 25vw;
   flex-grow: 1;
@@ -124,8 +132,8 @@ body main .carousel:nth-of-type(4) {
   background-size: 100% 100%;
 }
 
-body main .carousel:nth-of-type(5) {
-  border: 0.2vw solid #555;
+body main.firstMain .carousel:nth-of-type(5) {
+  border: 0.2vw solid #955;
   position: relative;
   height: 25vw;
   flex-grow: 1;
@@ -133,8 +141,8 @@ body main .carousel:nth-of-type(5) {
   background-size: 75% 35%;
 }
 
-body main .carousel:nth-of-type(6) {
-  border: 0.2vw solid #666;
+body main.firstMain .carousel:nth-of-type(6) {
+  border: 0.2vw solid #166;
   position: relative;
   height: 25vw;
   flex-grow: 1;
@@ -142,8 +150,8 @@ body main .carousel:nth-of-type(6) {
   background-size: 125% 150%;
 }
 
-body main .carousel:nth-of-type(7) {
-  border: 0.2vw solid #777;
+body main.firstMain .carousel:nth-of-type(7) {
+  border: 0.2vw solid #277;
   position: relative;
   height: 25vw;
   flex-grow: 1;
@@ -151,8 +159,8 @@ body main .carousel:nth-of-type(7) {
   background-size: 45% 30%;
 }
 
-body main .carousel:nth-of-type(8) {
-  border: 0.2vw solid #777;
+body main.firstMain .carousel:nth-of-type(8) {
+  border: 0.2vw solid #388;
   position: relative;
   height: 25vw;
   flex-grow: 1;
@@ -160,7 +168,7 @@ body main .carousel:nth-of-type(8) {
   background-size: 100% 100%;
 }
 
-body main .carousel:nth-of-type(9) {
+body main.firstMain .carousel:nth-of-type(9) {
   border: 0.2vw solid #444;
   position: relative;
   height: 25vw;
@@ -169,7 +177,7 @@ body main .carousel:nth-of-type(9) {
   background-size: 110% 35%;
 }
 
-body main .carousel:nth-of-type(10) {
+body main.firstMain .carousel:nth-of-type(10) {
   border: 0.2vw solid #505;
   position: relative;
   height: 25vw;
@@ -178,16 +186,16 @@ body main .carousel:nth-of-type(10) {
   background-size: 150% 100%;
 }
 
-body main .carousel:nth-of-type(11) {
+body main.firstMain .carousel:nth-of-type(11) {
   border: 0.2vw solid #666;
   position: relative;
   height: 25vw;
   flex-grow: 1;
   background-image: url(../../Images/lights.jpg);
-  background-size: 120% 45%;
+  background-size: 80% 80%;
 }
 
-body main .carousel:nth-of-type(12) {
+body main.firstMain .carousel:nth-of-type(12) {
   border: 0.2vw solid #747;
   position: relative;
   height: 25vw;
@@ -196,13 +204,67 @@ body main .carousel:nth-of-type(12) {
   background-size: 123% 67%;
 }
 
-body main .seeThru {
-  opacity: 0.6;
-  width: 20vw;
+body main.firstMain .seeThru {
+  opacity: 0.2;
+  width: 22vw;
+  transition: opacity 2s linear;
 }
 
-body main:hover {
+body main.firstMain:hover {
+  cursor: grab;
+  border: 0.4vw solid lightblue;
+  border-radius: 1vw;
+}
+
+body main.secondMain {
+  padding: 1.5vw;
+  display: flex;
+  align-items: stretch;
+  background: #468;
+  border: 0.2vw solid #089;
+}
+
+body main.secondMain:hover {
   cursor: crosshair;
   border: 0.4vw solid lightblue;
   border-radius: 1vw;
+}
+
+body main.secondMain span {
+  font-size: 8vw;
+  color: silver;
+  padding: 7vw 0;
+}
+
+body main.secondMain span:first-of-type {
+  transform: scaleX(-1);
+}
+
+body main.secondMain span:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+body main.secondMain .diaSlider {
+  transform: scaleX(-1);
+  background-size: 100% 150%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 0.5vw auto;
+  border: 0.3vw solid lightblue;
+  width: 25vw;
+  height: 25vw;
+}
+
+body main.secondMain .diaSlider:hover {
+  border: 0.4vw solid lightblue;
+  border-radius: 1vw;
+  transform: scaleX(1);
+  transition: transform 2s ease-in;
+}
+
+body img {
+  border: 0.2vw solid lime;
+  margin: 1vw auto;
 }
