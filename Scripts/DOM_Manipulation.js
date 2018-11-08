@@ -1,3 +1,4 @@
+document.addEventListener(`DOMContentLoaded`, function(ev) {
 /*
 Create a modal window box
 Create a div that appears always at the center of the page and prompts the user to give his/her
@@ -137,3 +138,4 @@ button.addEventListener(`click`, function(ev) {
   newParagraph.innerText = text;
   document.body.appendChild(newParagraph);
 })
+}) /*DOMContentLoaded*/
