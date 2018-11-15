@@ -2,6 +2,9 @@ body {
   background: lime;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+body form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +12,7 @@ body {
   font-size: 2vw;
 }
 
-body input {
+body form input {
   outline: none;
   width: 60%;
   padding: 2vw;
@@ -19,7 +22,7 @@ body input {
   box-shadow: 0.2vw 0.2vw #777;
 }
 
-body button {
+body form button {
   outline: none;
   width: 20%;
   background: saddlebrown;
@@ -31,7 +34,7 @@ body button {
   box-shadow: 0.2vw 0.2vw #777;
 }
 
-body button:hover {
+body form button:hover {
   color: saddlebrown;
   background: gold;
   cursor: pointer;

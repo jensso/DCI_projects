@@ -2,11 +2,12 @@ body {
   background: lime;
   margin: 0 auto;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: comic;
-  font-size: 2vw;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: comic;
+    font-size: 2vw;
 
   input {
     outline: none;
@@ -33,6 +34,7 @@ body {
       color: saddlebrown;
       background: gold;
       cursor: pointer;
+      }
     }
   }
 }
