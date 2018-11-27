@@ -1,0 +1,18 @@
+body {
+  margin: 0.5vw auto;
+  background: #155585;
+  display: flex;
+  h2 {
+    color: #455565;
+    margin: 2vw auto;
+    padding: 2vw;
+    text-shadow: 0.2vw 0.2vw navy;
+    text-decoration: underline;
+    font-variant: small-caps;
+    &:hover {
+      color: #fff;
+      text-shadow: 0.3vw 0.3vw lime;
+      cursor: crosshair;
+    }
+  }
+}

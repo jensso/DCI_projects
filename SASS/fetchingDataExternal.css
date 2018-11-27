@@ -1,0 +1,41 @@
+body {
+  margin: 1vw auto;
+  background: magenta;
+}
+
+body button {
+  margin: 1vw 2vw;
+  color: green;
+  background: lime;
+  font-size: 2vw;
+  padding: 1vw;
+  border-radius: 2vw;
+}
+
+body button:hover {
+  cursor: pointer;
+  color: white;
+  background: green;
+  padding: 1vw;
+  border-radius: 2vw;
+  box-shadow: 0.2vw 0.2vw white;
+}
+
+body section {
+  width: 40%;
+  margin: 1vw auto;
+  background: lime;
+  border-radius: 2vw;
+}
+
+body section h4 {
+  color: salmon;
+  font-size: 3vw;
+  padding: 1vw;
+}
+
+body section p {
+  color: lightblue;
+  font-size: 2vw;
+  padding: 2vw;
+}
