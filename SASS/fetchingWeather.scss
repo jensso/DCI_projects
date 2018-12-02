@@ -1,0 +1,96 @@
+body {
+  margin: 2vw auto;
+  background: green;
+  button {
+    margin: 1vw;
+    color: green;
+    background: lime;
+    font-size: 2.5vw;
+    padding: 1.5vw;
+    border-radius: 2.5vw;
+    border: 0.2vw solid silver;
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background: green;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  form {
+    background: lightgreen;
+  button {
+    margin: 1vw;
+    color: green;
+    background: lime;
+    font-size: 2.5vw;
+    padding: 1.5vw;
+    border-radius: 2.5vw;
+    border: 0.2vw solid silver;
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background: green;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  input {
+    width: 60%;
+    margin: 1vw;
+    font-size: 2vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    border: 0.2vw solid lime;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    section {
+    text-align: center;
+    width: 30%;
+    margin: 1vw;
+    opacity: 0.8;
+    background: lightblue;
+    box-shadow: rgba(150,60,210,0.6);
+    border-radius: 2vw;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+      box-shadow: 0.4vw 0.4vw lime;
+      border: 0.1vw solid grey;
+    }
+    h3 {
+      color: rgba(50,50,50,0.8);
+      background: rgba(150,160,170,0.4);
+      text-shadow: 0.1vw 0.2vw #fff;
+      font-size: 3vw;
+      margin: 1vw;
+      padding: 1vw 2vw;
+      border-radius: 2vw;
+      text-align: center;
+    }
+    p {
+      color: rgba(100,50,20,0.9);
+      background: rgba(150,160,170,0.4);
+      border-radius: 2vw;
+      text-shadow: 0.2vw 0.1vw rgba(100,200,300,0.8);
+      font-size: 3vw;
+      margin: 1vw;
+      font-family: arial;
+      padding: 2vw 1vw;
+      text-align: center;
+    }
+  }
+}
+}
