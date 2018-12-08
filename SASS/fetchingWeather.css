@@ -56,6 +56,12 @@ body form input {
   border: 0.2vw solid lime;
 }
 
+body form input::placeholder {
+  color: lime;
+  opacity: 0.5;
+  font-family: "Comic Sans MS";
+}
+
 body form input:focus {
   outline: none;
 }
@@ -66,6 +72,7 @@ body #container {
 }
 
 body #container section {
+  font-family: "Comic Sans MS";
   text-align: center;
   width: 30%;
   margin: 1vw;
@@ -83,7 +90,7 @@ body #container section:hover {
 }
 
 body #container section h3 {
-  color: rgba(50, 50, 50, 0.8);
+  color: rgba(50, 60, 50, 0.8);
   background: rgba(150, 160, 170, 0.4);
   text-shadow: 0.1vw 0.2vw #fff;
   font-size: 3vw;
@@ -100,7 +107,6 @@ body #container section p {
   text-shadow: 0.2vw 0.1vw rgba(100, 200, 255, 0.8);
   font-size: 3vw;
   margin: 1vw;
-  font-family: arial;
   padding: 2vw 1vw;
   text-align: center;
 }

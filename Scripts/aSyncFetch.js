@@ -4,27 +4,39 @@ let container = document.querySelector(`div`);
   let imagesFromSomewhere = [
     `amsterdam`,
     `miami`,
+    `brooklyn`,
+    `forest`,
+    `clouds`,
+    `canyon`,
     `reykjavik`,
     `elphi`,
     `barcelona`,
     `hamburg`,
     `donostia`,
     `sifnos`,
+    `colorado`,
+    `cologne`,
+    `lights`,
+    `beachhouse`,
   ];
-  let getImages = async (ev)=> {
-    let delayFetch = (name, time) => {
-      return new Promise((resolve, reject) => {
-          setTimeout(() => {
-            resolve(fetch(`../../Images/${imagesFromSomewhere[i]}.jpg`))
-          }, time)
+  let getImagesSimultan =  collection => {
+  let allOfThem = [];
+    for (images of imagesFromSomewhere) {
+      let path = `../../Images/${images}.jpg`;
+      let promisedAllOfThem = new Promise((resolve,reject) => {
+        resolve(fetch(path));
       })
+      allOfThem.push(promisedAllOfThem);
     }
-    for (var i = 0; i < imagesFromSomewhere.length; i++) {
-  let imagePath = await delayFetch(imagesFromSomewhere[i],1000);
-  console.log(imagePath);
+    console.log(allOfThem);
+    return Promise.all(allOfThem);
+  }
+  let bringImages = async (ev)=> {
+  let collection = await getImagesSimultan();
+  for (images of collection) {
   let newImage = document.createElement(`IMG`);
-  newImage.src = imagePath.url;
+  newImage.src = images.url;
   container.appendChild(newImage);
+  }
 }
-}
-btn.addEventListener(`click`, getImages);
+btn.addEventListener(`click`, bringImages);

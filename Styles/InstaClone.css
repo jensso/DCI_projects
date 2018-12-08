@@ -49,6 +49,7 @@ body #container section img {
 body #container section img:hover {
   cursor: crosshair;
   opacity: 0.2;
+  transform: rotateY(720deg);
   border-radius: 50%;
   transition: all 4s ease-out;
 }
@@ -61,7 +62,7 @@ body #container section p, body #container section h2 {
 
 body #container section p:hover, body #container section h2:hover {
   cursor: progress;
-  transform: rotateZ(360deg);
+  transform: rotateY(360deg);
   transition: all 2s linear;
 }
 

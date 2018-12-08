@@ -19,7 +19,6 @@ nav {
       color: grey;
       background: white;
       transition: all 2s linear;
-
     }
   }
 }
@@ -44,8 +43,7 @@ section {
     &:hover {
       cursor: crosshair;
       opacity: 0.2;
-      // transform: rotateY(720deg);
-      // transform: rotateZ(1080deg);
+      transform: rotateY(720deg);
       border-radius: 50%;
       transition: all 4s ease-out;
     }
@@ -57,7 +55,7 @@ section {
 
     &:hover {
       cursor: progress;
-      transform: rotateZ(360deg);
+      transform: rotateY(360deg);
       transition: all 2s linear;
       }
     }

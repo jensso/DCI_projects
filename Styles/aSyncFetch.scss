@@ -2,20 +2,22 @@ body {
   background: rgba(100,200,300,0.8);
 
   button {
-    color: red;
-    background: green;
+    background: lime;
     outline: none;
     width: 6vw;
     height: 6vw;
     border-radius: 4vw;
-    border: 0.1vw solid grey;
+    border: 0.1vw solid black;
     margin: 2vw;
     font-size: 1vw;
 
     &:hover {
-      color: green;
       background: red;
       cursor: pointer;
+      border: 0.6vw solid grey;
+
+      transform: rotateZ(360deg);
+      transition: all 2.5s linear;
     }
 
 
