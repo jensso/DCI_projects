@@ -13,9 +13,9 @@ for (let i = 0; i < headings.length; i++) {
   headings[i].addEventListener(`click`, function(ev) {
     ev.stopPropagation();
 
-    for (let ii = 0; ii < sections.length; ii++) {
-    if (sections[ii].classList.contains(`visible`)) {
-      sections[ii].classList.remove(`visible`);
+    for (let j = 0; j < sections.length; j++) {
+    if (sections[j].classList.contains(`visible`)) {
+      sections[j].classList.remove(`visible`);
       break;
       }
     }
@@ -24,9 +24,9 @@ for (let i = 0; i < headings.length; i++) {
 }
 
 document.body.addEventListener(`click`, function() {
-  for (let iii = 0; iii < sections.length; iii++) {
-  if (sections[iii].classList.contains(`visible`)) {
-    sections[iii].classList.remove(`visible`);
+  for (let k = 0; k < sections.length; k++) {
+  if (sections[k].classList.contains(`visible`)) {
+    sections[k].classList.remove(`visible`);
     break;
     }
   }
@@ -35,14 +35,14 @@ document.body.addEventListener(`click`, function() {
 let movie = document.querySelectorAll(`aside > li`);
 let description = document.querySelectorAll(`section.templet > p`);
 
-for (let j = 0; j < movie.length; j++) {
-  movie[j].addEventListener(`click`, function() {
-    for (let k = 0; k < description.length; k++) {
-      if (description[k].classList.contains(`seeText`)) {
-        description[k].classList.remove(`seeText`);
+for (let l = 0; l < movie.length; l++) {
+  movie[l].addEventListener(`click`, function() {
+    for (let m = 0; m < description.length; m++) {
+      if (description[m].classList.contains(`seeText`)) {
+        description[m].classList.remove(`seeText`);
         break;
       }
     }
-    description[j].classList.add(`seeText`);
+    description[l].classList.add(`seeText`);
   })
 }

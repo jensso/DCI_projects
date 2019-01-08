@@ -41,7 +41,7 @@ The countdown should count reversely and show how many months remain between the
 how many days, how many hours, minutes and seconds. The countdown should be updated after each second.
 */
 
-let countToXmas = setInterval(function(){
+let countToXmas = setInterval(ev=> {
 
 let futureDate = new Date(2018,11,25);
 let now = new Date();

@@ -1,3 +1,6 @@
+document.addEventListener(`DOMContentLoaded`, function(ev) {
+
+
 let btn = document.querySelector(`button`);
 let form = document.querySelector(`form`);
 
@@ -65,4 +68,6 @@ catch (error) {
 
 }
 }
+
 form.addEventListener(`submit`, getWeatherForCity);
+})

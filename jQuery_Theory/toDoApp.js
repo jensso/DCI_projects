@@ -23,6 +23,6 @@ $().ready(ev=> {
 
       $(close).click(ev=> {
         $(taskBar).remove();
-      })
     })
+  })
 })

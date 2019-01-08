@@ -46,21 +46,21 @@ $(`h6`).click(ev=> {
   $(`h6`).nextAll().hide();
   $(ev.target).nextAll().toggle();
   $(`li.aktiv`).removeClass(`aktiv`);
-
   $(`li.aktiv`).hide();
-
   $(`li`).addClass(`aktiv`);
-})
-$(`nav`).mouseleave(ev=> {
+
+  $(`nav`).mouseleave(ev=> {
   $(`nav> ul> li`).hide();
 })
+})
+
 
 $(`#forest`).click(ev=> {
   $(ev.target).animate( {
     right: `-20%`,
-    width: `80%`,
+    width: `100%`,
     height: `20vw`,
-      })
+  },{duration: 2000})
     let  textArea = document.createElement(`H5`);
     textArea.innerText = `ein Wald:`;
         // methods to put Elements to the HTML:
@@ -73,7 +73,6 @@ $(`#forest`).click(ev=> {
       fontSize: `4vw`,
       textShadow: `0.1vw 0.2vw yellow`});
       $(ev.target).unbind(`click`);
-
 })
 
 }) //end of .ready
