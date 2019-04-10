@@ -57,7 +57,7 @@ let pisces = new Zodiac('Pisces', new Date(2020, 1, 20), new Date(2020, 2, 20));
 const allZodiacs = [aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces];
 
 const showZodiac = birthday => {
-  birthday.getMonth() === 0 ? birthday.setYear(2021) : birthday.setYear(2020);
+  birthday.getMonth() === 0 && birthday.getDate() <20 ? birthday.setYear(2021) : birthday.setYear(2020);
   for (let zodiac of allZodiacs) {
     if (birthday >= zodiac.beginDate && birthday <= zodiac.endDate) {
       return `Your zodiac is ${zodiac.sign}`;

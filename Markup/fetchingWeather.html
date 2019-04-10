@@ -6,22 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>check weather around the globe</title>
   <link rel="stylesheet" href="../SASS/fetchingWeather.css">
-
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="../Scripts/fetchingWeather.js"></script>
-
 </head>
 <body>
-
-  <form>
-  <input type="text" placeholder="enter city for weathercheck (seperate multiples by ' - ')"></input>
-  <button type="submit" id="weather">bring the weather</button>
-  </form>
-  <div id="container">
-
+  <div id="weatherForm">
+    <form>
+      <input type="text" placeholder="enter city for weathercheck (seperate multiples by '-')"></input>
+      <button type="submit" id="weatherBtn">bring the weather</button>
+    </form>
   </div>
-
+  <div id="container"></div>
 </body>
-
 
 </html>

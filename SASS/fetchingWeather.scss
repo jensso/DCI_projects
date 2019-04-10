@@ -1,70 +1,54 @@
 body {
   margin: 2vw auto;
   background: green;
-  button {
-    margin: 1vw;
-    color: green;
-    background: lime;
-    font-size: 2.5vw;
-    padding: 1.5vw;
-    border-radius: 2.5vw;
-    border: 0.2vw solid silver;
 
-    &:hover {
-      cursor: pointer;
-      color: white;
-      background: green;
-    }
-    &:focus {
-      outline: none;
-    }
-  }
-
-  form {
-    background: lightgreen;
-  button {
-    margin: 1vw;
-    color: green;
-    background: lime;
-    font-size: 2.5vw;
-    padding: 1.5vw;
-    border-radius: 2.5vw;
-    border: 0.2vw solid silver;
-
-    &:hover {
-      cursor: pointer;
-      color: white;
-      background: green;
-    }
-    &:focus {
-      outline: none;
-    }
-  }
-  input {
-    width: 60%;
-    margin: 1vw;
-    font-size: 2vw;
-    padding: 1vw;
-    border-radius: 2vw;
-    border: 0.2vw solid lime;
-    &::placeholder {
-      color: lime;
-      opacity: 0.5;
-      font-family: "Comic Sans MS";
-    }
-    &:focus {
-      outline: none;
-    }
-  }
-}
 
   #container {
     display: flex;
     flex-wrap: wrap;
+    form {
+      width: 80%;
+      background: silver;
+    input {
+      // width: 60%;
+      margin: 1vw;
+      font-size: 2vw;
+      padding: 1vw;
+      border-radius: 2vw;
+      border: 0.2vw solid lime;
+      &::placeholder {
+        color: lime;
+        opacity: 0.5;
+        font-family: "Comic Sans MS";
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      margin: 1vw;
+      color: green;
+      background: lime;
+      font-size: 2.5vw;
+      padding: 1.5vw;
+      border-radius: 2.5vw;
+      border: 0.2vw solid silver;
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+        background: green;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
     section {
     font-family: "Comic Sans MS";
     text-align: center;
-    width: 30%;
+    width: 80%;
     margin: 1vw;
     opacity: 0.8;
     background: lightblue;

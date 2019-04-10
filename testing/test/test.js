@@ -91,27 +91,14 @@ const datesToCheck = [
   new Date(2020,0,25),
   new Date(2020,1,25),
 ]
-const allZodiacs = [
-  aries,
-  taurus,
-  gemini,
-  cancer,
-  leo,
-  virgo,
-  libra,
-  scorpio,
-  sagittarius,
-  capricorn,
-  aquarius,
-  pisces];
-
+const allZodiacs = factory.allZodiacs;
 
 
   for (let i = 0; i < datesToCheck.length; i++) {
     // datesToCheck[i]
-    it(`should return ${Zodiac.sign[i]}`, ()=>{
+    it(`should return ${allZodiacs[i].sign}`, ()=>{
       const actualResult = factory.showZodiac(datesToCheck[i]);
-      const expectedResult = `Your zodiac is ${zodiac.sign}`;
+      const expectedResult = `Your zodiac is ${allZodiacs[i].sign}`;
 
       assert.equal(actualResult,expectedResult);
     })
