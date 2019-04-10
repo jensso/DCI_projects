@@ -6,8 +6,8 @@ one of the forbidden words you have predefined. If it does print to the console 
 Predefine 5 forbidden words and put them in an array before creating the function.
 Thus it would be easier to check every word if it is included to the forbidden array of words or not.
 hint; You may want to refresh the strings split and the arrays includes method before starting.
-*/ 
-let showSentence = function(sentence) {
+*/
+let showSentence = (sentence)=> {
   let explicit = [`cock`,`ASS`,`butt`,`Dick`,`cunt`];
   explicit = explicit.join(` `).toLowerCase().split(` `);
   sentence = sentence.toLowerCase().split(` `);
@@ -36,7 +36,7 @@ hint; You may want to revisit the array join method before proceeding further.
 */
 let favColors = [`colors`,`navy`,`red`,`silver`,`grey`,`darkgrey`,`black`,`even more black`];
 let favFoods = [`food`,`Pizza`,`Pasta`,`Chocolate`,`beer`,`more beer`]
-let favThings = function(favThings) {
+let favThings = (favThings)=> {
   let things = favThings.shift();
 console.log(`My favorite ${things} among others are ${favThings}`);
 }
@@ -57,7 +57,7 @@ hint; You may want to recall how to loop through an array
 and also how to use the new constructor for creating multiple objects from a template.
 */
 
-let fan = function(firstName,lastName,favTeam,homeTown) {
+let fan = (firstName,lastName,favTeam,homeTown)=> {
 this.firstName = firstName;
 this.lastName = lastName;
 this.favTeam = favTeam;
@@ -76,7 +76,7 @@ let stefan = new fan(`Stefan`,`Schulz`,`BvB 09`,`Stuttgart`);
 
 let fanPeople = [heiko,dirk,uwe,thomas,marco,franz,angela,pep,cristiano,stefan];
 
-let printCityOfFans = function(team) {
+let printCityOfFans = (team)=> {
   for (var i = 0; i < fanPeople.length; i++) {
     if (fanPeople[i].favTeam === team) {
       console.log(`${fanPeople[i].firstName + ` ` + fanPeople[i].lastName} is from ${fanPeople[i].homeTown}
@@ -99,7 +99,7 @@ Then you may want to join the latest array into one string.
 in the end when you call the function returnAbbr
 ('I write this text from Amsterdam') it should return 'IWTTFA'.
 */
-let returnAbbr = function(sentence) {
+let returnAbbr = (sentence)=> {
   let words =  sentence.toUpperCase().split(` `);
   let emptyArray = [];
 
@@ -136,7 +136,7 @@ let milk = {item: "Milk", price: 1};
 
 let buyableThings = [bananas,onions,tomatos,apples,coke,beer,bread,butter,cheese,milk];
 
-let budgetCalculator = function(money) {
+let budgetCalculator = (money)=> {
   for (var i = 0; i < buyableThings.length; i++) {
     if (buyableThings[i].price < money) {
       console.log(`You can have ${buyableThings[i].item}`);
@@ -168,7 +168,7 @@ Especially one of those is going to untie your hands.
 
 let sales = ['smartphone', 'smartphone', 'laptop', 'smartphone', 'laptop', 'air cooler',
              'smartphone', 'smartphone', 'laptop', 'smartphone'];
-let showQuantity = function(array) {
+let showQuantity = (array)=> {
   let soldSmartphones = 0;
   let soldLaptops = 0;
   let soldAirCooler = 0;
