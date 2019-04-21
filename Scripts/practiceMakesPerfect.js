@@ -33,7 +33,6 @@ var sum = true;
  var inputV = 517;
 
  if (sum) {
-   console.log(inputI + inputII + inputIII + inputIV + inputV);
    console.log((inputI + inputII + inputIII + inputIV + inputV)/5);
     }
     else {

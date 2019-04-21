@@ -1,37 +1,14 @@
-let names = [`Mauro`,`Eugen`,`Meir`,`Mohamad`,`Mohammed`,`Ali`,`Milad`,`Sue`,`Carmine`,`Jens`,`Daniel`,`Marcelo`,`Jake`];
 
-console.log(names.includes(`Ali`));
-console.log(names.indexOf(`Ali`));
+let counter = 10;
+let countToZero = setInterval(function() {
+  counter --;
+  console.log(counter);
+  if (counter === 0) {
+    console.log(`Boom`);
 
-let ali = names.find(function(name) {
-  return name === `Ali`;
-})
-
-let nameWith3Buchstaben = names.find(function(value) {
-  return value.length === 3;
-})
-console.log(nameWith3Buchstaben);
-
-let allNamesWith3Buchstaben = names.filter(function(name) {
-  return name.length === 3;
-})
-console.log(allNamesWith3Buchstaben);
-
-names.map(function(name) {
-  console.log(name);
-})
-
-
-// let counter = 10;
-// let countToZero = setInterval(function() {
-//   counter --;
-//   console.log(counter);
-//   if (counter === 0) {
-//     console.log(`Boom`);
-//
-//     clearInterval(countToZero);
-//   }
-// },1000)
+    clearInterval(countToZero);
+  }
+},1000)
 
 /*
 Create a countdown until an event

@@ -73,7 +73,6 @@ let course = {
     for (let guys in this) {
       if (this[guys].Hobby) {
         console.log(this[guys].Hobby);
-
       }
     }
   }

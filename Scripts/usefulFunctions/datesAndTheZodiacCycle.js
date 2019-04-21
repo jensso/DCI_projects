@@ -1,15 +1,15 @@
-// let currentDate = new Date();
-// console.log(currentDate);
-// let nextBday = new Date(2019,5,9);
-// console.log(nextBday);
-// let nextXmas = new Date(`Dec/24/2019`);
-// console.log(nextXmas);
-// // Date Getters
-// let dateOfBday = nextBday.getDate();
-// console.log(dateOfBday);
-// // Date Setters
-// nextXmas.setMonth(5);
-// console.log(nextXmas);
+let currentDate = new Date();
+console.log(currentDate);
+let nextBday = new Date(2019,5,9);
+console.log(nextBday);
+let nextXmas = new Date(`Dec/24/2019`);
+console.log(nextXmas);
+// Date Getters
+let dateOfBday = nextBday.getDate();
+console.log(dateOfBday);
+// Date Setters
+nextXmas.setMonth(5);
+console.log(nextXmas);
 /*
 Book future Day event
 Create a function that accept two date objects as arguments. The First is the current date,
@@ -63,15 +63,15 @@ Write a function that calculates what is the last day of each month on a given y
 Pass the given year as an argument to make this the most reusable way you can.
 */
 
-// let lastDaysOfMonth = function(year) {
-//   let days = [`Sunday`,`Monday`,`Tuesday`,`Wednesday`,`Thursday`,`Friday`,`Saturday`];
-//   for (let i = 1; i <= 12; i++) {
-//   let lastDayOfMonth = new Date(year, i, 0);
-//   let dayOfWeek = lastDayOfMonth.getDay();
-//   console.log(`the ${lastDayOfMonth} in ${year} is a ${days[dayOfWeek]}.`);
-//   }
-// }
-// lastDaysOfMonth(2018);
+let lastDaysOfMonth = function(year) {
+  let days = [`Sunday`,`Monday`,`Tuesday`,`Wednesday`,`Thursday`,`Friday`,`Saturday`];
+  for (let i = 1; i <= 12; i++) {
+  let lastDayOfMonth = new Date(year, i, 0);
+  let dayOfWeek = lastDayOfMonth.getDay();
+  console.log(`the ${lastDayOfMonth} in ${year} is a ${days[dayOfWeek]}.`);
+  }
+}
+lastDaysOfMonth(2018);
 /*
 Create the Zodiac cycle
 Write a function that accepts an argument as a date as a birthdate and returns the zodiac sign of the user.
